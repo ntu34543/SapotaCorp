@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="../Session
+            1/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
+        <style>
+        /* p:nth-child(2) {
+            writing-mode: vertical-rl;
+        }
+
+        p:nth-child(3) {
+            writing-mode: vertical-lr;
+            padding-block: 1em;
+        }
+
+        p {
+            max-inline-size: 20ch;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+        }
+
+        article>* {
+            padding: 0.5em;
+            border: 1px solid steelblue;
+        } */
+        /* ::selection {
+            background-color: green;
+            color: white;
+        }
+
+        p:nth-of-type(2)::selection {
+            background: darkblue;
+            color: yellow;
+        }
+
+        ::marker {
+            color: hotpink;
+        }
+
+        ul ::marker {
+            font-size: 1.5em;
+        }
+
+        ol ::marker {
+            font-size: 1.1em;
+        } */
+
+        /* summary::marker {
+            content: '\002B'' '; */
+            /* Plus symbol with space */
+        /* }
+
+        details[open] summary::marker {
+            content: '\2212'' '; */
+            /* Minus symbol with space */
+        /* } */
+
+        /* Presentational styles */
+        /* li+li {
+            margin-top: 0.25em;
+        }
+
+        ol {
+            padding: 0 0 0 1.1em;
+        } */
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+        }
+
+        .wrapper{
+            width: 80%;
+            margin: auto;
+            height: 100%;
+        }
+
+        .section{
+            width: 100%;
+        }
+
+        .about-content{
+            width: 100%;
+            height: 75vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-image, .content-title{
+            position: absolute;
+        }
+
+        .content-image img{
+            width: 500px;
+            height: 500px;
+            /* height: auto; */
+            object-fit: cover;
+            border-radius: 999px;
+        }
+
+        .content-title h1{
+            margin-top: 380px;
+            font-size: 100px;
+            font-weight: 900;
+        }
+
+        .about-title{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- <header></header>
+        <section class="wrapper">
+            <div class="section" id="about-me">
+                <div class="about-content">
+                    <div class="content-image">
+                        <img src="./FB_IMG_1631956686946.jpg" alt="">
+                    </div>
+                    <div class="content-title">
+                        <h1>CÔNG ƠI</h1>
+                    </div>
+                </div>
+                <div>
+                    <p class="about-title">MÌNH LÀ CÔNG VÀ MÌNH GHI LẠI
+                        HÀNH
+                        TRÌNH BƯỚC VÀO THẾ GIỚI NGƯỜI LỚN!</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- <div class="test"></div> -->
+        <!-- Backgrounds # -->
+        <!-- <div class="stack">
+        <div class="content card">
+          <p><b><span id="desktop-prompt">Hover</span><span id="mobile-prompt">Tap</span> me!</b></p>
+          <p>I'm just some example text content so there's something inside this box, nothing much to see here.</p>
+        </div>
+        <div class="padding card"></div>
+        <div class="border card"></div>
+        <div class="background card"></div>
+        <div class="box-shadow card"></div>
+      </div> -->
+        <!-- <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>The <code>::marker</code> pseudo-element</h1>
+                <figure class="callout">
+                    <p>
+                        Using <code>::marker</code> pseudo-element, you can style the markers of the
+                        <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and
+                        <code>&lt;summary&gt;</code> elements.
+                    </p>
+                </figure>
+                <ul>
+                    <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+                    <li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</li>
+                    <li>Curabitur blandit tempus porttitor.</li>
+                </ul>
+                <ol>
+                    <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+                    <li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</li>
+                    <li>Curabitur blandit tempus porttitor.</li>
+                </ol>
+                <details>
+                    <summary>Open for some more content</summary>
+                    <p>
+                        Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere
+                        consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem
+                        lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius
+                        blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Donec sed odio dui. Praesent commodo cursus magna, vel
+                        scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                        ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac
+                        facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula
+                        ut id elit.
+                    </p>
+                </details>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, possimus asperiores labore autem
+                    corporis vero accusamus iure repellat voluptas officia praesentium harum aliquam laudantium suscipit
+                    non ad sed id sapiente.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, possimus asperiores labore autem
+                    corporis vero accusamus iure repellat voluptas officia praesentium harum aliquam laudantium suscipit
+                    non ad sed id sapiente.</p>
+            </article>
+        </div>
+    </main> -->
+        <!-- Inline flow -->
+        <!-- <article>
+        <p>
+            This line is <code>horizontal-tb</code> which is the initial
+            value for
+            <code>writing-mode</code>
+        </p>
+        <p>
+            This line is <code>vertical-rl</code>—read from right to left
+            and top to bottom.
+        </p>
+        <p>
+            This line is <code>vertical-lr</code>—read from left to right
+            and top to bottom.
+        </p>
+    </article> -->
+        <!-- Inline flow -->
+        <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">VỪA CODE VỪA XÀM</a></li>
+                <li><a href="">LẬP TRÌNH WEB</a></li>
+                <li><a href="">ABOUT ME</a></li>
+            </ul>
+            <div class="site-nav-right">
+                <div class="social-links">
+                    <a href="" class="social-link social-link-fb">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <a href="" class="rss-button"><i class="fa-solid fa-wifi"></i></i></a>
+            </div>
+        </nav>
+        <div class="banner-header">
+            <h1 class="site-title">
+                <img src="../Session 1/img/Ellipse 175 (1).png" alt="" class="site-logo">
+            </h1>
+            <h2 class="site-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                dignissimos?</h2>
+        </div>
+    </header>
+        <main>
+            <section>
+                <!-- Tab links -->
+                <div class="tabs">
+                <button class="tablinks active" data-electronic="allproducts">Tất cả sản phẩm</button>
+                <button class="tablinks" data-electronic="Microcontrollers">Vi điều khiển - Nhúng</button>
+                <button class="tablinks" data-electronic="module">Module ứng dụng</button>
+            </div>
+                <!-- Tab content -->
+                <div class="wrapper_tabcontent">
+                <div id="allproducts" class="tabcontent active">
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-949f885f-8d8a-445e-be5c-0cce06cdb4b1.jpg?v=1582441789000"
+                        width="100%" />
+                    <h3>Combo Trạm Hàn Hakko 936 + Sensor Hàn A1321</h3>
+                </div>
+
+                <div id="Microcontrollers" class="tabcontent">
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/raspberry-pi-4-model-b.jpg?v=1566526980000"
+                        width="100%" />
+                    <h3>Raspberry Pi 4 Model B 2019</h3>
+                </div>
+
+                <div id="module" class="tabcontent">
+                    <img src="//bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-96b83938-650f-4f51-8b0a-61ee9f8f9039.jpg?v=1580721383000"
+                        width="100%" />
+                    <h3>Module Khuếch Đại Âm Thanh Bluetooth Stereo 30W/40W Công Suất Cao XY-P40W</h3>
+                </div>
+            </div>
+            </section>
+        </main>
+        <script src="./Tabs.js"></script>
+    </body>
+
+</html>

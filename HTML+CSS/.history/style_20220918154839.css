@@ -1,0 +1,55 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 2%;
+    margin: 5% 5%;
+    padding: 3%;
+    border:solid black 2px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.news{
+    border: solid black 2px;
+}
+.big-news a{
+    font-size: 30px;  
+}
+.big-img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display:block;
+}
+.small-img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: 30% 40%;
+}
+.small-news a{
+    font-size: 15px;
+    border: solid black 2px;
+}
+.news-detail{
+    display: flex;
+}
+
+/* Table */
+table{
+    width: 100%;
+}
+thead {
+    background-color: #1C6EA4;
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #E1E1E1;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+}

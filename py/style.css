@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #e5e5e5;
+
+    --bcn-orange: #f16a2d;
+    --bcn-orange-light: #f9ae56;
+    --bcn-orange-dark: #d96129;
+
+    --black: #333;
+    --white: #f5f5f5;
+
+    --text-color: #555;
+
+    --border-color: rgb(238, 238, 238);
+    --border-style: 1px solid var(--border-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+i{
+    padding-right: 15px;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.admin {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+}
+
+#admin__nav {
+    background-color: var(--black);
+}
+
+#menu {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+}
+
+#menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    padding: 20px;
+}
+
+#menu li a {
+    display: block;
+    padding: 0 20px 0 40px;
+    text-decoration: none;
+    color: rgb(201, 180, 180);
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 200;
+    line-height: 65px;
+}
+
+#menu li a:hover {
+    color: var(--white);
+    background-color: var(--text-color);
+}
+
+#menu li:active a {
+    background:#f9ae56;
+    color:white;
+}
+
+#admin__main {
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* header[role=banner] ul li {
+    display: flex;
+    justify-content: space-around;
+} */
+
+header[role=banner] ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#logOut{
+    padding-right: 8px;
+}
+main[role=main]{
+    border: 1px solid black;
+    height: 80vh;
+    background-color: var(--white);
+    /* width: 100%; */
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+main[role=main] h2{
+    padding-left: 10px;
+}
+/* .table .tr{
+    border-bottom: 1px solid black;
+} */
+/* table td,th {
+    border-bottom: 1px solid black;
+    text-align: start;
+} */
+/* table{
+    width: 100%;
+} */
+.table-01 {
+    width: 100%;
+    /* border-collapse: collapse; */
+    /* table-layout: fixed; */
+  }
+  
+  .table-01 th,
+  .table-01 td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+  }
+  
+  .table-01 th {
+    background-color: #f7f7f7;
+    text-align: start;
+  }
+  
+  @media (max-width: 768px) {
+    .table-01 td,
+    .table-01 th,
+    .table-01 tr {
+      display: block;
+      margin-top: -1px;
+    }
+    
+    .table-01 th{
+      text-align: left;
+    }
+    
+    .table-01 td {
+      padding-left: 30px;
+    }
+  }
